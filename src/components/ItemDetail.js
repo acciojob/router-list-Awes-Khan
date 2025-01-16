@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 const ItemDetail = () => {
 
     const { id } = useParams()
+    console.log("id", id);
     return (
         <div>
             <h1>Item {id}</h1>

@@ -9,14 +9,14 @@ import ItemDetail from "./ItemDetail";
 
 const App = () => {
   return (
-    <BrowserRouter>
     <div>
-      <Routes>
-        <Route path="/" element={<ItemList />}/>
-        <Route path="/items/:id" element={<ItemDetail />}/>
-      </Routes>
-    </div>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ItemList />}/>
+          <Route path="/items/:id" element={<ItemDetail />}/>
+        </Routes>
+        </BrowserRouter>
+      </div>
   )
 }
 
