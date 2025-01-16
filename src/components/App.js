@@ -4,15 +4,13 @@ import './../styles/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemList from "./ItemList";
 import ItemDetail from "./ItemDetail";
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<ItemList />} />
-        <Route path="/item/:id" element={<ItemDetail />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<ItemList />} />
+      <Route path="/item/:id" element={<ItemDetail />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App
