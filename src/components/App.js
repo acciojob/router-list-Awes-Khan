@@ -6,16 +6,13 @@ import ItemList from "./ItemList";
 import ItemDetail from "./ItemDetail";
 const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ItemList />} />
-          <Route path="/item/:id" element={<ItemDetail />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ItemList />} />
+        <Route path="/item/:id" element={<ItemDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
